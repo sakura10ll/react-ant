@@ -13,7 +13,7 @@ module.exports = override(
   // 配置 less 文件编译和加载，antd 的样式使用了 Less 作为开发语言
   addLessLoader({
     javascriptEnabled: true,   // 启用内联javascript，使其支持编写javascript
-    modifyVars: { '@primary-color': '#1DA57A' },
+    modifyVars: { '@primary-color': '#1DA57A' }, // 修改变量
   }),
   // 配置 antd-dayjs-webpack-plugin 用 dayjs 替换 momentjs 优化打包大小
   addWebpackPlugin(new AntdDayjsWebpackPlugin())
